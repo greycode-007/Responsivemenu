@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+}
+
+body, html{
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* The menu Container */
+header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Controls the left name, can be replaced with a logo */
+.brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+}
+/* Configure the navigation bar*/
+.menu {
+  width: 60%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+.menu ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.menu ul a {
+  width: 20%;
+  height: inherit;
+  color: white;
+  display: inline-block;
+}
+.menu  a:hover {
+  color: rgb(98, 98, 248);
+}
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+/* Mobile menu Media Quarie for mobile screens */
+@media screen and (max-width: 768px) {
+
+  
+  .menu {
+      width: 100%;
+      height: auto;
+  }
+  .menu ul {
+      display: block;
+      max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+   }
+  .menu ul a {
+      text-align: left;
+      width: 100%;
+      height: 50px;
+      background-color: orangered;
+      padding: 5px 0px 5px 5%;
+  }
+  .menu-icon {
+      width: 100px;
+      height: inherit;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 60px;
+  }
+  #menuToggle:checked ~ ul {
+      max-height: 350px;
+      
+  }
+  .menu-icon i {
+      font-size: 1.7em;
+  }
+}
