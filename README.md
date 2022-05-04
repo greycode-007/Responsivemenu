@@ -2,10 +2,10 @@
 
 ### Screenshot
 
-![](images/menu)
+![](image/menu.png)
 
 
 ### Links
 
-- Live Site URL: [Visit Website ](github.com/greycode-007/Responsivemenu/#)
+- Live Site URL: [Visit Website ](https://greycode-007.github.io/Responsivemenu/)
 
